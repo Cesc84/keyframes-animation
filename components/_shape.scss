@@ -1,0 +1,104 @@
+$white: #FFFFFF;
+$darkgreen: #1e817e;
+$green: #8fba7b;
+$lightgreen: #e2e8c0;
+$pink: #cea6c4;
+$purple: #ad51b5;
+$grey : #333333;
+
+.shape {
+  width: calc(100% / 12 * 2);
+  float: left;
+  color: $white;
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  &.one, &.two, &.three, &.four, &.five, &.six {
+    &:hover {
+      h1 {
+        opacity: 1;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.one {
+    background: $darkgreen;
+    &:hover {
+      h1 {
+        opacity: 1;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.two {
+    background: $green;
+    &:hover {
+      h1 {
+        opacity: 1;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.three {
+    background: $lightgreen;
+    &:hover {
+      h1 {
+        opacity: 1;
+        left: -60px;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.four {
+    background: $pink;
+    &:hover {
+      h1 {
+        opacity: 1;
+        left: -15px;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.five {
+    background: $purple;
+    &:hover {
+      h1 {
+        opacity: 1;
+        left: -35px;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+  &.six {
+    background: $grey;
+    &:hover {
+      h1 {
+        opacity: 1;
+        left: -33px;
+      }
+      h3 {
+        display: none;
+      }
+      @include grow;
+    }
+  }
+}
